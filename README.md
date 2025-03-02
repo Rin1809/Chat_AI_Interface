@@ -1,4 +1,4 @@
-# Chat Bot GUI
+# Chat Bot GUI ᓚᘏᗢ
 
 <!-- Vietnamese -->
 <details>
