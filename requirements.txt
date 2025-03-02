@@ -1,0 +1,7 @@
+Flask
+python-dotenv
+google-generativeai
+Werkzeug
+clipboard
+showdown
+google

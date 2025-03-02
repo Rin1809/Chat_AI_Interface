@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rin AI</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/material-darker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</head>
+
+<body>
+    <div class="sidebar collapsed">
+        <div class="sidebar-top">
+            <h3>Cài Đặt</h3>
+            <button id="new-prompt-button"><i class="fas fa-plus"></i> Tạo Prompt Mới</button>
+            <button id="toggle-safety-settings"><i class="fas fa-shield-alt"></i> Cài Đặt An Toàn</button>
+        </div>
+        <div class="sidebar-bottom">
+            <h3>Lịch Sử Trò Chuyện</h3>
+            <ul id="chat-list">
+            </ul>
+            <div class="delete-buttons">
+                <button id="delete-all-chats"><i class="fas fa-trash-alt"></i> Xóa Tất Cả</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content sidebar-collapsed">
+        <div class="chat-header">
+            <button id="toggle-sidebar"><i class="fas fa-bars"></i></button>
+        </div>
+        <div class="system-instruction-container collapsed">
+            <div class="instruction-header">
+                <button id="toggle-instruction"><i class="fas fa-chevron-down"></i></button>
+                <span>Cách Rin phản hồi</span>
+            </div>
+            <textarea id="system-instruction-input" placeholder="Nhập hướng dẫn hệ thống..."></textarea>
+            <button id="save-system-instruction"><i class="fas fa-check"></i></button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div id="placeholder">
+               <h1>Giờ Làm Gì Đây?</h1>
+               <p>RinをAIの限界まで押し上げてて  |  powered by the Gemini API</p>
+               <div class="prompt-buttons" id="prompt-buttons"></div>
+           </div>
+        </div>
+        <div id="message-input-container">
+            <div class="input-group">
+                <textarea id="message-input" placeholder="Nhập tin nhắn..."></textarea>
+                <button class="upload-button" id="upload-button"><i class="fas fa-plus"></i></button>
+                <input type="file" id="file-input" multiple hidden>
+                <button id="send-button"><i class="fas fa-play-circle"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="safety-settings-container" id="safety-settings-container">
+        <div class="safety-settings-header">
+            <h3>Cài Đặt An Toàn</h3>
+            <button id="close-safety-settings"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="safety-setting">
+            <label for="hate-speech">Ngôn Từ Thù Hận:</label>
+            <select id="hate-speech">
+                <option value="HARM_BLOCK_THRESHOLD_UNSPECIFIED">Không Xác Định</option>
+                <option value="BLOCK_LOW_AND_ABOVE">Thấp và Cao Hơn</option>
+                <option value="BLOCK_MEDIUM_AND_ABOVE">Trung Bình và Cao Hơn</option>
+                <option value="BLOCK_ONLY_HIGH">Chỉ Cao</option>
+                <option value="BLOCK_NONE">Không</option>
+            </select>
+        </div>
+        <div class="safety-setting">
+            <label for="dangerous-content">Nội Dung Nguy Hiểm:</label>
+            <select id="dangerous-content">
+                <option value="HARM_BLOCK_THRESHOLD_UNSPECIFIED">Không Xác Định</option>
+                <option value="BLOCK_LOW_AND_ABOVE">Thấp và Cao Hơn</option>
+                <option value="BLOCK_MEDIUM_AND_ABOVE">Trung Bình và Cao Hơn</option>
+                <option value="BLOCK_ONLY_HIGH">Chỉ Cao</option>
+                <option value="BLOCK_NONE">Không</option>
+            </select>
+        </div>
+        <div class="safety-setting">
+            <label for="harassment">Quấy Rối:</label>
+            <select id="harassment">
+                 <option value="HARM_BLOCK_THRESHOLD_UNSPECIFIED">Không Xác Định</option>
+                <option value="BLOCK_LOW_AND_ABOVE">Thấp và Cao Hơn</option>
+                <option value="BLOCK_MEDIUM_AND_ABOVE">Trung Bình và Cao Hơn</option>
+                <option value="BLOCK_ONLY_HIGH">Chỉ Cao</option>
+                <option value="BLOCK_NONE">Không</option>
+            </select>
+        </div>
+        <div class="safety-setting">
+            <label for="sexually-explicit">Nội Dung Khiêu Dâm:</label>
+            <select id="sexually-explicit">
+                 <option value="HARM_BLOCK_THRESHOLD_UNSPECIFIED">Không Xác Định</option>
+                <option value="BLOCK_LOW_AND_ABOVE">Thấp và Cao Hơn</option>
+                <option value="BLOCK_MEDIUM_AND_ABOVE">Trung Bình và Cao Hơn</option>
+                <option value="BLOCK_ONLY_HIGH">Chỉ Cao</option>
+                <option value="BLOCK_NONE">Không</option>
+            </select>
+        </div>
+        <button id="save-settings"><i class="fa fa-wrench"></i>  Lưu Cài Đặt</button>
+    </div>
+    <script src="static/js/utils.js"></script>
+    <script src="static/js/app.js"></script>
+    <script src="static/js/animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
+</body>
+</html>

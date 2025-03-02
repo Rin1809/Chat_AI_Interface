@@ -1,0 +1,1046 @@
+[
+    {
+        "prompt": "Viết một bài thơ về mùa thu.",
+        "icon": "fa-leaf"
+    },
+    {
+        "prompt": "Tạo một câu chuyện ngắn về cuộc phiêu lưu của một chú mèo.",
+        "icon": "fa-cat"
+    },
+    {
+        "prompt": "Giải thích về hiện tượng nhật thực.",
+        "icon": "fa-moon"
+    },
+    {
+        "prompt": "Viết code python để giải phương trình bậc 2",
+        "icon": "fa-code"
+    },
+    {
+        "prompt": "bạn có thể làm được những gì",
+        "icon": "fa-question-circle"
+    },
+    {
+        "prompt": "tạo một danh sách phát nhạc",
+        "icon": "fa-music"
+    },
+      {
+        "prompt": "Kể tên 5 thành phố lớn nhất Việt Nam.",
+        "icon": "fa-city"
+    },
+    {
+        "prompt": "Đề xuất một công thức nấu ăn đơn giản.",
+        "icon": "fa-utensils"
+    },
+    {
+        "prompt": "Tạo một câu đố vui.",
+        "icon": "fa-puzzle-piece"
+    },
+    {
+        "prompt": "Dịch câu 'Hello world' sang tiếng Pháp.",
+        "icon": "fa-language"
+    },
+  {
+        "prompt": "So sánh sự khác biệt giữa Javascript và Python.",
+         "icon": "fa-laptop-code"
+    },
+     {
+        "prompt":"Liệt kê các hành tinh trong hệ mặt trời.",
+         "icon":"fa-globe-asia"
+    },
+    {
+        "prompt": "Tạo một đoạn quảng cáo ngắn cho một sản phẩm mới.",
+         "icon":"fa-bullhorn"
+    },
+    {
+        "prompt":"Tóm tắt nội dung cuốn sách 'Đắc Nhân Tâm'.",
+        "icon":"fa-book"
+    },
+     {
+        "prompt":"Viết một email xin nghỉ phép.",
+         "icon":"fa-envelope"
+    },
+    {
+        "prompt":"Vẽ phác họa một con rồng",
+        "icon":"fa-paint-brush"
+    },
+    {
+        "prompt": "Cho tôi biết một điều thú vị về loài chim cánh cụt.",
+         "icon":"fa-feather-alt"
+    },
+    {
+        "prompt": "Viết một bài hát ngắn về tình bạn.",
+        "icon": "fa-microphone-alt"
+    },
+     {
+        "prompt": "Giải thích nguyên lý hoạt động của pin mặt trời.",
+        "icon": "fa-solar-panel"
+    },
+    {
+         "prompt": "Tạo một checklist những việc cần làm trong ngày.",
+        "icon":"fa-list-check"
+    },
+     {
+        "prompt": "Viết một bản tin thể thao ngắn.",
+         "icon":"fa-futbol"
+    },
+    {
+        "prompt": "Đề xuất một địa điểm du lịch lãng mạn ở Việt Nam.",
+         "icon":"fa-heart"
+    },
+    {
+       "prompt": "Phân tích bài thơ 'Tây Tiến'.",
+       "icon":"fa-align-justify"
+    },
+   {
+        "prompt": "Nêu 5 lợi ích của việc tập thể dục hàng ngày.",
+       "icon":"fa-dumbbell"
+    },
+    {
+        "prompt": "So sánh ưu nhược điểm của mạng xã hội.",
+        "icon":"fa-share-alt-square"
+    },
+      {
+        "prompt": "Tạo một bài văn tả cảnh hoàng hôn trên biển.",
+        "icon":"fa-sun"
+    },
+    {
+        "prompt": "Mô tả chi tiết về một con mèo anh lông ngắn",
+        "icon": "fa-paw"
+    },
+        {
+       "prompt": "Hướng dẫn cách làm món gà rán giòn.",
+        "icon":"fa-drumstick-bite"
+    },
+    {
+        "prompt": "Tạo một đoạn hội thoại giữa một khách hàng và một nhân viên bán hàng.",
+         "icon":"fa-comments"
+    },
+   {
+        "prompt": "Viết một tin nhắn chúc mừng sinh nhật.",
+         "icon":"fa-birthday-cake"
+    },
+      {
+        "prompt":"Cho biết lịch sử của Internet",
+        "icon":"fa-globe"
+    },
+      {
+        "prompt":"Tạo một danh sách các công việc có thể làm tại nhà.",
+         "icon":"fa-home"
+    },
+      {
+        "prompt": "Liệt kê các loại trái cây phổ biến ở Việt Nam.",
+        "icon":"fa-apple-alt"
+    },
+     {
+        "prompt":"Lập kế hoạch cho một chuyến dã ngoại.",
+         "icon":"fa-campground"
+    },
+    {
+      "prompt":"Tạo một slogan quảng cáo cho sản phẩm trà sữa.",
+       "icon":"fa-mug-hot"
+    },
+    {
+        "prompt":"So sánh máy ảnh DSLR và máy ảnh Mirrorless",
+        "icon":"fa-camera"
+    },
+     {
+       "prompt":"Nêu các biện pháp phòng chống dịch bệnh.",
+      "icon":"fa-shield-virus"
+    },
+    {
+        "prompt": "Giới thiệu về 5 nền văn hóa đặc sắc trên thế giới.",
+        "icon":"fa-landmark"
+    },
+    {
+         "prompt": "Lập một danh sách những việc cần làm trước khi đi du lịch.",
+        "icon":"fa-plane-departure"
+    },
+    {
+       "prompt": "Giải thích về khái niệm 'vũ trụ song song'.",
+       "icon":"fa-meteor"
+    },
+       {
+       "prompt":"Nêu 5 lợi ích của việc đọc sách.",
+      "icon":"fa-glasses"
+    },
+       {
+       "prompt":"Tạo một bài thuyết trình ngắn về biến đổi khí hậu.",
+       "icon":"fa-cloud-sun"
+    },
+      {
+        "prompt":"Cho biết ai là người tìm ra điện?",
+        "icon":"fa-bolt"
+    },
+       {
+      "prompt":"Phân tích một bài hát mà bạn yêu thích.",
+       "icon":"fa-headphones"
+    },
+       {
+       "prompt": "Viết một đoạn văn về sự quan trọng của giấc ngủ.",
+       "icon":"fa-bed"
+    },
+    {
+       "prompt":"Nêu các biện pháp bảo vệ môi trường.",
+      "icon":"fa-recycle"
+    },
+     {
+        "prompt":"Giới thiệu một bộ phim hay mà bạn đã xem.",
+       "icon":"fa-film"
+    },
+      {
+        "prompt":"Tóm tắt một tin tức nóng hổi.",
+      "icon":"fa-newspaper"
+    },
+    {
+       "prompt":"Nêu các bước cài đặt một phần mềm.",
+      "icon":"fa-download"
+    },
+      {
+        "prompt":"Viết một câu chuyện ngắn về một con robot",
+        "icon":"fa-robot"
+    },
+     {
+        "prompt":"Nêu các bước tạo một trang web đơn giản.",
+         "icon":"fa-code-branch"
+    },
+    {
+      "prompt":"Phân tích một bức tranh nổi tiếng",
+       "icon":"fa-palette"
+    },
+     {
+        "prompt":"Viết một lời nhắn nhủ đến chính mình trong tương lai",
+      "icon":"fa-pen-alt"
+    },
+     {
+       "prompt":"Đề xuất một bài tập luyện tại nhà đơn giản",
+      "icon":"fa-running"
+    },
+    {
+       "prompt":"Nêu các bước làm một bài nghiên cứu",
+        "icon":"fa-search"
+    },
+     {
+      "prompt": "Giới thiệu một món ăn đường phố đặc trưng ở Việt Nam.",
+       "icon":"fa-street-view"
+    },
+   {
+      "prompt":"Phân tích bài hát 'Waiting For You' của MONO",
+       "icon":"fa-compact-disc"
+    },
+   {
+       "prompt":"Nêu 5 lý do tại sao nên học ngoại ngữ",
+       "icon":"fa-graduation-cap"
+    },
+    {
+       "prompt":"So sánh việc học online và học offline.",
+        "icon":"fa-chalkboard-teacher"
+    },
+  {
+        "prompt": "Nêu các bước giải quyết một vấn đề phức tạp.",
+         "icon":"fa-tools"
+   },
+    {
+      "prompt":"Lập kế hoạch cho một buổi tối xem phim tại nhà.",
+       "icon":"fa-tv"
+    },
+  {
+        "prompt": "Viết một đoạn văn miêu tả vẻ đẹp của một bông hoa.",
+       "icon":"fa-flower"
+    },
+ {
+        "prompt":"Cho tôi biết những điều cần tránh khi phỏng vấn xin việc?",
+        "icon":"fa-briefcase"
+    },
+ {
+        "prompt": "Nêu các bước chăm sóc da hàng ngày.",
+       "icon":"fa-hand-sparkles"
+    },
+  {
+        "prompt": "Giới thiệu về lễ hội Halloween.",
+         "icon":"fa-ghost"
+    },
+   {
+        "prompt": "Tạo một bài thơ ngắn về tình yêu.",
+       "icon":"fa-heartbeat"
+    },
+    {
+      "prompt":"Viết một đoạn văn miêu tả cảm xúc khi đạt được thành công",
+        "icon":"fa-trophy"
+    },
+  {
+      "prompt":"Cho tôi biết 5 tác phẩm văn học nổi tiếng của Việt Nam",
+     "icon":"fa-scroll"
+    },
+  {
+      "prompt":"Phân tích về bộ phim 'Avatar' của James Cameron.",
+      "icon":"fa-video"
+    },
+  {
+        "prompt":"Nêu các cách giữ gìn sức khỏe tim mạch",
+        "icon":"fa-heart-pulse"
+    },
+ {
+       "prompt":"Tóm tắt nội dung bộ phim 'Forrest Gump'.",
+        "icon":"fa-popcorn"
+    },
+ {
+       "prompt": "Nêu những lợi ích của việc học chơi một loại nhạc cụ.",
+       "icon":"fa-guitar"
+    },
+ {
+       "prompt": "Tạo một danh sách những việc cần làm để chuẩn bị cho một buổi thuyết trình.",
+        "icon":"fa-microphone"
+    },
+ {
+       "prompt": "Mô tả vẻ đẹp của một con sông vào buổi chiều tà.",
+      "icon":"fa-water"
+    },
+ {
+      "prompt":"So sánh những điểm khác nhau giữa mèo và chó.",
+      "icon":"fa-dog"
+    },
+{
+        "prompt": "Liệt kê 5 phát minh vĩ đại của nhân loại.",
+        "icon":"fa-lightbulb"
+    },
+{
+        "prompt": "Giới thiệu về văn hóa trà đạo của Nhật Bản.",
+        "icon":"fa-mug-tea"
+    },
+{
+        "prompt": "Tạo một danh sách những việc nên làm vào cuối tuần.",
+        "icon":"fa-calendar-week"
+    },
+{
+        "prompt": "Viết một đoạn văn mô tả về một khu rừng vào mùa xuân.",
+        "icon":"fa-tree"
+    },
+{
+        "prompt":"Kể tên 5 loài hoa có màu đỏ đặc trưng.",
+        "icon":"fa-tint"
+    },
+{
+       "prompt":"Lập một kế hoạch chi tiêu cá nhân hợp lý.",
+       "icon":"fa-coins"
+    },
+{
+        "prompt": "Giới thiệu về ngày lễ Giáng Sinh.",
+        "icon":"fa-gift"
+    },
+{
+        "prompt": "Tạo một bài tập yoga đơn giản cho người mới bắt đầu.",
+       "icon":"fa-om"
+    },
+    {
+        "prompt":"Kể một câu chuyện cười ngắn.",
+        "icon":"fa-grin-beam"
+    },
+{
+       "prompt":"Nêu các bước thực hiện một món đồ handmade",
+       "icon":"fa-cut"
+    },
+ {
+        "prompt": "So sánh các hệ điều hành Windows, MacOS và Linux.",
+        "icon":"fa-desktop"
+   },
+ {
+        "prompt":"Nêu 5 cách để cải thiện trí nhớ.",
+       "icon":"fa-brain"
+   },
+ {
+        "prompt":"Tạo một đoạn quảng cáo sản phẩm nước hoa.",
+        "icon":"fa-spray-can"
+    },
+    {
+       "prompt":"Nêu các nguyên tắc để có một bài viết hấp dẫn.",
+      "icon":"fa-edit"
+    },
+    {
+       "prompt":"Giới thiệu một bảo tàng nghệ thuật nổi tiếng trên thế giới.",
+        "icon":"fa-university"
+    },
+{
+        "prompt": "Liệt kê 5 loài động vật sống ở dưới biển sâu.",
+       "icon":"fa-fish"
+    },
+    {
+        "prompt": "Tạo một kế hoạch học tập hiệu quả.",
+        "icon":"fa-clipboard-list"
+    },
+{
+        "prompt": "Nêu các bước để có một giấc ngủ ngon.",
+       "icon":"fa-moon"
+    },
+{
+        "prompt":"Cho biết quy trình sản xuất một chiếc bánh kem",
+        "icon":"fa-birthday-cake"
+    },
+ {
+        "prompt": "Viết một đoạn văn ngắn về lợi ích của việc đi du lịch.",
+        "icon":"fa-suitcase-rolling"
+    },
+{
+        "prompt":"Nêu các cách để giảm căng thẳng.",
+       "icon":"fa-hand-holding-heart"
+    },
+    {
+       "prompt": "Tạo một công thức pha chế cocktail đơn giản.",
+        "icon":"fa-cocktail"
+    },
+   {
+        "prompt": "Viết một đoạn văn ngắn về những khó khăn trong cuộc sống.",
+        "icon":"fa-sad-tear"
+    },
+{
+        "prompt": "Cho biết cách lên kế hoạch cho một bữa tiệc sinh nhật.",
+       "icon":"fa-balloons"
+    },
+ {
+      "prompt":"Giới thiệu về một món ăn truyền thống của Hàn Quốc.",
+       "icon":"fa-bowl-food"
+    },
+  {
+        "prompt": "Nêu các bước sơ cứu khi bị bỏng.",
+       "icon":"fa-fire-extinguisher"
+    },
+    {
+        "prompt":"Tóm tắt nội dung tác phẩm 'Chí Phèo' của Nam Cao.",
+       "icon":"fa-book-open"
+    },
+ {
+        "prompt":"Nêu các bước để có một buổi phỏng vấn thành công.",
+       "icon":"fa-user-tie"
+    },
+ {
+        "prompt":"Viết một lời chúc tốt nghiệp.",
+        "icon":"fa-graduation-cap"
+    },
+{
+        "prompt":"Tạo một đoạn văn ngắn về tầm quan trọng của việc học",
+       "icon":"fa-book-reader"
+    },
+   {
+       "prompt":"Giới thiệu về các loại hình nghệ thuật sân khấu",
+        "icon":"fa-theater-masks"
+    },
+     {
+        "prompt":"Nêu 5 cách bảo vệ mắt khi làm việc với máy tính",
+       "icon":"fa-eye"
+    },
+    {
+        "prompt": "Viết một bài thơ về mùa thu.",
+        "icon": "fa-leaf"
+    },
+    {
+        "prompt": "Tạo một câu chuyện ngắn về cuộc phiêu lưu của một chú mèo.",
+        "icon": "fa-cat"
+    },
+    {
+        "prompt": "Giải thích về hiện tượng nhật thực.",
+        "icon": "fa-moon"
+    },
+    {
+        "prompt": "Viết code python để giải phương trình bậc 2",
+        "icon": "fa-code"
+    },
+    {
+        "prompt": "bạn có thể làm được những gì",
+        "icon": "fa-question-circle"
+    },
+    {
+        "prompt": "tạo một danh sách phát nhạc",
+        "icon": "fa-music"
+    },
+      {
+        "prompt": "Kể tên 5 thành phố lớn nhất Việt Nam.",
+        "icon": "fa-city"
+    },
+    {
+        "prompt": "Đề xuất một công thức nấu ăn đơn giản.",
+        "icon": "fa-utensils"
+    },
+    {
+        "prompt": "Tạo một câu đố vui.",
+        "icon": "fa-puzzle-piece"
+    },
+    {
+        "prompt": "Dịch câu 'Hello world' sang tiếng Pháp.",
+        "icon": "fa-language"
+    },
+  {
+        "prompt": "So sánh sự khác biệt giữa Javascript và Python.",
+         "icon": "fa-laptop-code"
+    },
+     {
+        "prompt":"Liệt kê các hành tinh trong hệ mặt trời.",
+         "icon":"fa-globe-asia"
+    },
+    {
+        "prompt": "Tạo một đoạn quảng cáo ngắn cho một sản phẩm mới.",
+         "icon":"fa-bullhorn"
+    },
+    {
+        "prompt":"Tóm tắt nội dung cuốn sách 'Đắc Nhân Tâm'.",
+        "icon":"fa-book"
+    },
+     {
+        "prompt":"Viết một email xin nghỉ phép.",
+         "icon":"fa-envelope"
+    },
+    {
+        "prompt":"Vẽ phác họa một con rồng",
+        "icon":"fa-paint-brush"
+    },
+    {
+        "prompt": "Cho tôi biết một điều thú vị về loài chim cánh cụt.",
+         "icon":"fa-feather-alt"
+    },
+    {
+        "prompt": "Viết một bài hát ngắn về tình bạn.",
+        "icon": "fa-microphone-alt"
+    },
+     {
+        "prompt": "Giải thích nguyên lý hoạt động của pin mặt trời.",
+        "icon": "fa-solar-panel"
+    },
+    {
+         "prompt": "Tạo một checklist những việc cần làm trong ngày.",
+        "icon":"fa-list-check"
+    },
+     {
+        "prompt": "Viết một bản tin thể thao ngắn.",
+         "icon":"fa-futbol"
+    },
+    {
+        "prompt": "Đề xuất một địa điểm du lịch lãng mạn ở Việt Nam.",
+         "icon":"fa-heart"
+    },
+    {
+       "prompt": "Phân tích bài thơ 'Tây Tiến'.",
+       "icon":"fa-align-justify"
+    },
+   {
+        "prompt": "Nêu 5 lợi ích của việc tập thể dục hàng ngày.",
+       "icon":"fa-dumbbell"
+    },
+    {
+        "prompt": "So sánh ưu nhược điểm của mạng xã hội.",
+        "icon":"fa-share-alt-square"
+    },
+      {
+        "prompt": "Tạo một bài văn tả cảnh hoàng hôn trên biển.",
+        "icon":"fa-sun"
+    },
+    {
+        "prompt": "Mô tả chi tiết về một con mèo anh lông ngắn",
+        "icon": "fa-paw"
+    },
+        {
+       "prompt": "Hướng dẫn cách làm món gà rán giòn.",
+        "icon":"fa-drumstick-bite"
+    },
+    {
+        "prompt": "Tạo một đoạn hội thoại giữa một khách hàng và một nhân viên bán hàng.",
+         "icon":"fa-comments"
+    },
+   {
+        "prompt": "Viết một tin nhắn chúc mừng sinh nhật.",
+         "icon":"fa-birthday-cake"
+    },
+      {
+        "prompt":"Cho biết lịch sử của Internet",
+        "icon":"fa-globe"
+    },
+      {
+        "prompt":"Tạo một danh sách các công việc có thể làm tại nhà.",
+         "icon":"fa-home"
+    },
+      {
+        "prompt": "Liệt kê các loại trái cây phổ biến ở Việt Nam.",
+        "icon":"fa-apple-alt"
+    },
+     {
+        "prompt":"Lập kế hoạch cho một chuyến dã ngoại.",
+         "icon":"fa-campground"
+    },
+    {
+      "prompt":"Tạo một slogan quảng cáo cho sản phẩm trà sữa.",
+       "icon":"fa-mug-hot"
+    },
+    {
+        "prompt":"So sánh máy ảnh DSLR và máy ảnh Mirrorless",
+        "icon":"fa-camera"
+    },
+     {
+       "prompt":"Nêu các biện pháp phòng chống dịch bệnh.",
+      "icon":"fa-shield-virus"
+    },
+    {
+        "prompt": "Giới thiệu về 5 nền văn hóa đặc sắc trên thế giới.",
+        "icon":"fa-landmark"
+    },
+    {
+         "prompt": "Lập một danh sách những việc cần làm trước khi đi du lịch.",
+        "icon":"fa-plane-departure"
+    },
+    {
+       "prompt": "Giải thích về khái niệm 'vũ trụ song song'.",
+       "icon":"fa-meteor"
+    },
+       {
+       "prompt":"Nêu 5 lợi ích của việc đọc sách.",
+      "icon":"fa-glasses"
+    },
+       {
+       "prompt":"Tạo một bài thuyết trình ngắn về biến đổi khí hậu.",
+       "icon":"fa-cloud-sun"
+    },
+      {
+        "prompt":"Cho biết ai là người tìm ra điện?",
+        "icon":"fa-bolt"
+    },
+       {
+      "prompt":"Phân tích một bài hát mà bạn yêu thích.",
+       "icon":"fa-headphones"
+    },
+       {
+       "prompt": "Viết một đoạn văn về sự quan trọng của giấc ngủ.",
+       "icon":"fa-bed"
+    },
+    {
+       "prompt":"Nêu các biện pháp bảo vệ môi trường.",
+      "icon":"fa-recycle"
+    },
+     {
+        "prompt":"Giới thiệu một bộ phim hay mà bạn đã xem.",
+       "icon":"fa-film"
+    },
+      {
+        "prompt":"Tóm tắt một tin tức nóng hổi.",
+      "icon":"fa-newspaper"
+    },
+    {
+       "prompt":"Nêu các bước cài đặt một phần mềm.",
+      "icon":"fa-download"
+    },
+      {
+        "prompt":"Viết một câu chuyện ngắn về một con robot",
+        "icon":"fa-robot"
+    },
+     {
+        "prompt":"Nêu các bước tạo một trang web đơn giản.",
+         "icon":"fa-code-branch"
+    },
+    {
+      "prompt":"Phân tích một bức tranh nổi tiếng",
+       "icon":"fa-palette"
+    },
+     {
+        "prompt":"Viết một lời nhắn nhủ đến chính mình trong tương lai",
+      "icon":"fa-pen-alt"
+    },
+     {
+       "prompt":"Đề xuất một bài tập luyện tại nhà đơn giản",
+      "icon":"fa-running"
+    },
+    {
+       "prompt":"Nêu các bước làm một bài nghiên cứu",
+        "icon":"fa-search"
+    },
+     {
+      "prompt": "Giới thiệu một món ăn đường phố đặc trưng ở Việt Nam.",
+       "icon":"fa-street-view"
+    },
+   {
+      "prompt":"Phân tích bài hát 'Waiting For You' của MONO",
+       "icon":"fa-compact-disc"
+    },
+   {
+       "prompt":"Nêu 5 lý do tại sao nên học ngoại ngữ",
+       "icon":"fa-graduation-cap"
+    },
+    {
+       "prompt":"So sánh việc học online và học offline.",
+        "icon":"fa-chalkboard-teacher"
+    },
+  {
+        "prompt": "Nêu các bước giải quyết một vấn đề phức tạp.",
+         "icon":"fa-tools"
+   },
+    {
+      "prompt":"Lập kế hoạch cho một buổi tối xem phim tại nhà.",
+       "icon":"fa-tv"
+    },
+  {
+        "prompt": "Viết một đoạn văn miêu tả vẻ đẹp của một bông hoa.",
+       "icon":"fa-flower"
+    },
+ {
+        "prompt":"Cho tôi biết những điều cần tránh khi phỏng vấn xin việc?",
+        "icon":"fa-briefcase"
+    },
+ {
+        "prompt": "Nêu các bước chăm sóc da hàng ngày.",
+       "icon":"fa-hand-sparkles"
+    },
+  {
+        "prompt": "Giới thiệu về lễ hội Halloween.",
+         "icon":"fa-ghost"
+    },
+   {
+        "prompt": "Tạo một bài thơ ngắn về tình yêu.",
+       "icon":"fa-heartbeat"
+    },
+    {
+      "prompt":"Viết một đoạn văn miêu tả cảm xúc khi đạt được thành công",
+        "icon":"fa-trophy"
+    },
+  {
+      "prompt":"Cho tôi biết 5 tác phẩm văn học nổi tiếng của Việt Nam",
+     "icon":"fa-scroll"
+    },
+  {
+      "prompt":"Phân tích về bộ phim 'Avatar' của James Cameron.",
+      "icon":"fa-video"
+    },
+  {
+        "prompt":"Nêu các cách giữ gìn sức khỏe tim mạch",
+        "icon":"fa-heart-pulse"
+    },
+ {
+       "prompt":"Tóm tắt nội dung bộ phim 'Forrest Gump'.",
+        "icon":"fa-popcorn"
+    },
+ {
+       "prompt": "Nêu những lợi ích của việc học chơi một loại nhạc cụ.",
+       "icon":"fa-guitar"
+    },
+ {
+       "prompt": "Tạo một danh sách những việc cần làm để chuẩn bị cho một buổi thuyết trình.",
+        "icon":"fa-microphone"
+    },
+ {
+       "prompt": "Mô tả vẻ đẹp của một con sông vào buổi chiều tà.",
+      "icon":"fa-water"
+    },
+ {
+      "prompt":"So sánh những điểm khác nhau giữa mèo và chó.",
+      "icon":"fa-dog"
+    },
+{
+        "prompt": "Liệt kê 5 phát minh vĩ đại của nhân loại.",
+        "icon":"fa-lightbulb"
+    },
+{
+        "prompt": "Giới thiệu về văn hóa trà đạo của Nhật Bản.",
+        "icon":"fa-mug-tea"
+    },
+{
+        "prompt": "Tạo một danh sách những việc nên làm vào cuối tuần.",
+        "icon":"fa-calendar-week"
+    },
+{
+        "prompt": "Viết một đoạn văn mô tả về một khu rừng vào mùa xuân.",
+        "icon":"fa-tree"
+    },
+{
+        "prompt":"Kể tên 5 loài hoa có màu đỏ đặc trưng.",
+        "icon":"fa-tint"
+    },
+{
+       "prompt":"Lập một kế hoạch chi tiêu cá nhân hợp lý.",
+       "icon":"fa-coins"
+    },
+{
+        "prompt": "Giới thiệu về ngày lễ Giáng Sinh.",
+        "icon":"fa-gift"
+    },
+{
+        "prompt": "Tạo một bài tập yoga đơn giản cho người mới bắt đầu.",
+       "icon":"fa-om"
+    },
+    {
+        "prompt":"Kể một câu chuyện cười ngắn.",
+        "icon":"fa-grin-beam"
+    },
+{
+       "prompt":"Nêu các bước thực hiện một món đồ handmade",
+       "icon":"fa-cut"
+    },
+ {
+        "prompt": "So sánh các hệ điều hành Windows, MacOS và Linux.",
+        "icon":"fa-desktop"
+   },
+ {
+        "prompt":"Nêu 5 cách để cải thiện trí nhớ.",
+       "icon":"fa-brain"
+   },
+ {
+        "prompt":"Tạo một đoạn quảng cáo sản phẩm nước hoa.",
+        "icon":"fa-spray-can"
+    },
+    {
+       "prompt":"Nêu các nguyên tắc để có một bài viết hấp dẫn.",
+      "icon":"fa-edit"
+    },
+    {
+       "prompt":"Giới thiệu một bảo tàng nghệ thuật nổi tiếng trên thế giới.",
+        "icon":"fa-university"
+    },
+{
+        "prompt": "Liệt kê 5 loài động vật sống ở dưới biển sâu.",
+       "icon":"fa-fish"
+    },
+    {
+        "prompt": "Tạo một kế hoạch học tập hiệu quả.",
+        "icon":"fa-clipboard-list"
+    },
+{
+        "prompt": "Nêu các bước để có một giấc ngủ ngon.",
+       "icon":"fa-moon"
+    },
+{
+        "prompt":"Cho biết quy trình sản xuất một chiếc bánh kem",
+        "icon":"fa-birthday-cake"
+    },
+ {
+        "prompt": "Viết một đoạn văn ngắn về lợi ích của việc đi du lịch.",
+        "icon":"fa-suitcase-rolling"
+    },
+{
+        "prompt":"Nêu các cách để giảm căng thẳng.",
+       "icon":"fa-hand-holding-heart"
+    },
+    {
+       "prompt": "Tạo một công thức pha chế cocktail đơn giản.",
+        "icon":"fa-cocktail"
+    },
+   {
+        "prompt": "Viết một đoạn văn ngắn về những khó khăn trong cuộc sống.",
+        "icon":"fa-sad-tear"
+    },
+{
+        "prompt": "Cho biết cách lên kế hoạch cho một bữa tiệc sinh nhật.",
+       "icon":"fa-balloons"
+    },
+ {
+      "prompt":"Giới thiệu về một món ăn truyền thống của Hàn Quốc.",
+       "icon":"fa-bowl-food"
+    },
+  {
+        "prompt": "Nêu các bước sơ cứu khi bị bỏng.",
+       "icon":"fa-fire-extinguisher"
+    },
+    {
+        "prompt":"Tóm tắt nội dung tác phẩm 'Chí Phèo' của Nam Cao.",
+       "icon":"fa-book-open"
+    },
+ {
+        "prompt":"Nêu các bước để có một buổi phỏng vấn thành công.",
+       "icon":"fa-user-tie"
+    },
+ {
+        "prompt":"Viết một lời chúc tốt nghiệp.",
+        "icon":"fa-graduation-cap"
+    },
+{
+        "prompt":"Tạo một đoạn văn ngắn về tầm quan trọng của việc học",
+       "icon":"fa-book-reader"
+    },
+   {
+       "prompt":"Giới thiệu về các loại hình nghệ thuật sân khấu",
+        "icon":"fa-theater-masks"
+    },
+     {
+        "prompt":"Nêu 5 cách bảo vệ mắt khi làm việc với máy tính",
+       "icon":"fa-eye"
+    },
+  {
+        "prompt": "Phân tích các yếu tố ảnh hưởng đến giá vàng",
+        "icon": "fa-coins"
+    },
+    {
+        "prompt": "So sánh sự khác biệt giữa thơ Đường và thơ hiện đại.",
+        "icon": "fa-scroll"
+    },
+      {
+        "prompt": "Nêu các bước để có một buổi hẹn hò thành công.",
+          "icon":"fa-heart-circle"
+     },
+    {
+        "prompt": "Giải thích về thuật toán tìm kiếm A*.",
+        "icon": "fa-search-plus"
+    },
+    {
+       "prompt":"Viết một đoạn văn ngắn về tầm quan trọng của sự trung thực.",
+        "icon":"fa-handshake"
+    },
+ {
+      "prompt":"Tạo một bài review về một quán cafe mới.",
+       "icon":"fa-mug-coffee"
+    },
+ {
+      "prompt": "Mô tả chi tiết về con chó Corgi.",
+        "icon":"fa-dog"
+    },
+    {
+        "prompt": "So sánh các loại hình nghệ thuật như hội họa và điêu khắc.",
+         "icon":"fa-brush"
+    },
+ {
+        "prompt":"Nêu 5 mẹo để học tiếng Anh hiệu quả.",
+       "icon":"fa-language"
+   },
+    {
+        "prompt": "Giải thích về khái niệm 'vòng lặp' trong lập trình.",
+         "icon":"fa-sync"
+    },
+{
+      "prompt":"Tạo một danh sách các hoạt động giải trí ngoài trời.",
+        "icon":"fa-hiking"
+    },
+   {
+        "prompt": "Mô tả vẻ đẹp của một ngọn núi vào buổi bình minh.",
+        "icon":"fa-mountain"
+    },
+{
+        "prompt": "Viết một đoạn văn ngắn về tình yêu quê hương.",
+        "icon": "fa-map-marked-alt"
+    },
+ {
+         "prompt": "Nêu các bước để chuẩn bị cho một buổi thuyết trình trực tuyến.",
+        "icon":"fa-laptop"
+   },
+{
+        "prompt": "Giải thích về khái niệm 'Trí tuệ nhân tạo' (AI).",
+         "icon":"fa-brain"
+    },
+ {
+        "prompt":"Tóm tắt nội dung cuốn tiểu thuyết 'Ông già và biển cả'.",
+        "icon":"fa-book-reader"
+    },
+   {
+      "prompt":"Nêu 5 lợi ích của việc ngủ trưa.",
+       "icon":"fa-bed"
+    },
+  {
+        "prompt": "Giới thiệu về một nhà văn nổi tiếng.",
+         "icon":"fa-pen-nib"
+    },
+{
+        "prompt":"Tạo một bài tập thể dục buổi sáng nhẹ nhàng.",
+       "icon":"fa-walking"
+   },
+    {
+        "prompt": "So sánh các loại hình du lịch như du lịch biển và du lịch núi.",
+       "icon":"fa-route"
+    },
+  {
+       "prompt": "Nêu các bước để xây dựng một thương hiệu cá nhân.",
+        "icon":"fa-user-circle"
+   },
+   {
+        "prompt":"Viết một đoạn văn ngắn về sự ảnh hưởng của công nghệ.",
+        "icon":"fa-robot"
+    },
+{
+        "prompt": "Tạo một danh sách các món ăn ngon từ thịt bò.",
+       "icon":"fa-steak"
+    },
+ {
+        "prompt": "Nêu 5 bước để có một bài thuyết trình tự tin.",
+        "icon":"fa-presentation"
+    },
+    {
+       "prompt":"Tạo một lời chúc mừng năm mới.",
+        "icon":"fa-gifts"
+    },
+{
+       "prompt": "Giải thích về khái niệm 'blockchain'.",
+        "icon":"fa-link"
+    },
+    {
+        "prompt": "Giới thiệu về một lễ hội truyền thống ở Việt Nam.",
+       "icon":"fa-calendar-alt"
+    },
+ {
+        "prompt": "Viết một đoạn văn về tầm quan trọng của việc giữ lời hứa.",
+         "icon":"fa-check-circle"
+    },
+    {
+        "prompt": "Mô tả chi tiết về loài chó Husky.",
+        "icon":"fa-dog"
+    },
+{
+       "prompt":"Nêu các bước để có một bài phát biểu hay.",
+        "icon":"fa-microphone-alt"
+    },
+{
+       "prompt":"So sánh các loại hình nghệ thuật như ca hát và nhảy múa.",
+       "icon":"fa-music"
+   },
+     {
+      "prompt": "Nêu 5 cách để cải thiện sự tập trung.",
+      "icon":"fa-focus"
+  },
+ {
+         "prompt": "Giải thích về khái niệm 'dữ liệu lớn' (big data).",
+         "icon":"fa-database"
+    },
+{
+       "prompt":"Tạo một bài review về một sản phẩm công nghệ mới.",
+        "icon":"fa-mobile-alt"
+    },
+{
+       "prompt": "Nêu 5 mẹo để tiết kiệm tiền hiệu quả.",
+        "icon":"fa-piggy-bank"
+    },
+ {
+      "prompt":"Tạo một danh sách các bài hát yêu thích của bạn.",
+       "icon":"fa-list-ul"
+  },
+    {
+       "prompt": "Mô tả vẻ đẹp của một cánh đồng lúa vào mùa gặt.",
+        "icon":"fa-wheat"
+    },
+  {
+        "prompt":"Viết một đoạn văn ngắn về tầm quan trọng của sự sáng tạo.",
+        "icon":"fa-lightbulb"
+    },
+{
+         "prompt":"So sánh các loại mạng xã hội như Facebook và Instagram.",
+         "icon":"fa-share-alt"
+    },
+ {
+        "prompt": "Nêu các bước để viết một bài luận thuyết phục.",
+        "icon":"fa-file-alt"
+   },
+   {
+      "prompt":"Tạo một bài tập thiền đơn giản cho người mới bắt đầu.",
+       "icon":"fa-peace"
+    },
+{
+      "prompt":"Nêu các bước để có một bữa ăn lành mạnh.",
+       "icon":"fa-apple-alt"
+    },
+  {
+        "prompt": "Giải thích về khái niệm 'mã nguồn mở'.",
+        "icon":"fa-code-branch"
+    },
+   {
+         "prompt": "Giới thiệu về một người nổi tiếng mà bạn ngưỡng mộ.",
+         "icon":"fa-star"
+    },
+ {
+        "prompt":"Tạo một danh sách những việc bạn muốn làm trước khi chết",
+        "icon":"fa-list-alt"
+    },
+{
+        "prompt": "Nêu 5 lợi ích của việc học code",
+        "icon":"fa-terminal"
+    },
+    {
+         "prompt": "Viết một đoạn văn ngắn về những điều làm bạn hạnh phúc.",
+        "icon":"fa-smile-beam"
+    }
+]

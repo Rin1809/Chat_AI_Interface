@@ -1,0 +1,1063 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #e0e0e0;
+    overflow: hidden;
+}
+
+.sidebar {
+    border-radius: 0px 50px 50px 0px;
+    width: 300px;
+    background-color: #121212;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    display: flex
+;
+    flex-direction: column;
+    height: 100vh;
+    flex-shrink: 0;
+    border-right: 1px solid #3e4661;
+    transition: width 0.3s ease, padding 0.3s ease;
+}
+
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.sidebar-top h3 {
+    margin-top: 0;
+    color: #d3d3d3;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.sidebar-top button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #121212;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease, border-color 0.3s ease;
+    font-size: 16px;
+    display: flex
+;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar-top button i {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.sidebar-top button:hover {
+    background-color: #000000;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.sidebar-bottom {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.sidebar-bottom h3 {
+    color: #d3d3d3;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+#chat-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+#chat-list li {
+    cursor: pointer;
+    padding: 12px;
+    border-bottom: 1px solid #383c4a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#chat-list li:hover {
+    background-color: #313538;
+    transform: translateX(5px);
+}
+
+.delete-chat-button {
+    display: none;
+    background: none;
+    color: #dc3545;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.delete-chat-button:hover {
+    color: #b02a37;
+}
+
+#chat-list li:hover .delete-chat-button {
+    display: block;
+}
+
+.delete-buttons {
+    margin-top: auto;
+}
+
+.delete-buttons button {
+    background-color: transparent;
+    color: #a3a3a3;
+    border: 0px solid #dc3545;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: auto;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease, border-color 0.3s ease;
+    font-size: 16px;
+    display: flex
+;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.delete-buttons button i {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.delete-buttons button:hover {
+    background-color: #000000;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 100vh;
+    transition: margin-right 0.3s ease, width 0.3s ease;
+    width: calc(100% - 300px);
+}
+
+.main-content.safety-open {
+    margin-right: 350px;
+    width: calc(100% - 650px);
+}
+
+.chat-header #toggle-sidebar {
+    margin-right: 10px; /* Cách nút bên phải 10px */
+}
+
+.chat-header button {
+    background: none;
+    color: #808080;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+    transition: color 0.3s ease, transform 0.2s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.chat-header button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 15px 20px; /* Tăng padding-right lên 20px */
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 1px solid #383c4a;
+    border-radius: 25px;
+    position: relative;
+}
+
+.chat-messages::-webkit-scrollbar {
+    width: 7px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+.chat-messages::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.user-message {
+    text-align: right;
+}
+
+.user-message .message-content {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+    display: inline-block;
+    max-width: 70%;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    padding: 12px;
+}
+
+/* Thêm hiệu ứng hover để hiển thị border */
+.user-message .message-content:hover {
+    border: 1px solid #797979;
+    border-radius: 25px;
+}
+
+.model-message .message-content {
+    color: #e0e0e0;
+    display: inline-block;
+    max-width: 70%;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    padding: 12px;
+    position: relative; /* Thêm position relative để định vị option */
+}
+/* Thêm hiệu ứng hover để hiển thị border */
+.model-message .message-content:hover {
+    border: 1px solid #686b75;
+    border-radius: 25px;
+
+}
+
+#message-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 60px;
+    width: calc(100% - 40px);
+    max-width: 900px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#message-input {
+    flex-grow: 1;
+    padding: 8px 70px 1px 22px;
+    border: none;
+    border-radius: 30px;
+    resize: none;
+    max-height: 80px;
+    overflow-y: auto;
+    background-color: #343a40;
+    color: #e0e0e0;
+    line-height: 1.5;
+    outline: none;
+    margin: 0;
+    position: relative;
+}
+
+#message-input:focus {
+    box-shadow: 0 0 5px #ffffff;
+}
+
+#message-input::-webkit-scrollbar {
+    width: 8px;
+}
+
+#message-input::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#message-input::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+#message-input::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+#send-button {
+    background-color: #343a40;
+    color: #797979;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#send-button:hover {
+    color: #ffffff;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.upload-button {
+    background: none;
+    color: #9c9c9c;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+    transition: color 0.3s ease, transform 0.2s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.upload-button:hover {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.safety-settings-container {
+    border-radius: 50px 0px 0px 50px;
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 320px;
+    height: 100%;
+    background-color: #121212;
+    padding: 20px;
+    z-index: 100;
+    transition: right 0.3s ease;
+    border-left: 1px solid #383c4a;
+    color: #e0e0e0;
+}
+
+.safety-settings-container.open {
+    right: 0;
+}
+
+.safety-settings-container h3 {
+    margin-top: 0;
+    color: #d3d3d3;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.safety-setting {
+    margin-bottom: 15px;
+}
+
+.safety-setting label {
+    display: block;
+    margin-bottom: 8px;
+    color: #e0e0e0;
+}
+
+.safety-setting select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #383c4a;
+    border-radius: 5px;
+    background-color: #343a40;
+    color: #e0e0e0;
+}
+
+#save-settings {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #121212;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease, border-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#save-settings:hover {
+    background-color: #3b3b3b;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+pre {
+    background-color: #1e1e1e; /* Màu nền sáng hơn */
+    padding: 15px;
+    border-radius: 25px;
+    overflow-x: hidden;
+    white-space: pre-wrap;
+    position: relative;
+    color: #e0e0e0; /* Màu chữ sáng */
+    font-size: 15px; /* Tăng kích thước font */
+    line-height: 1.5; /* Chỉnh khoảng cách dòng */
+    padding-bottom: 30px;
+    word-wrap: break-word; /* Thêm thuộc tính này để ngắt từ dài */
+}
+
+.hljs {
+    border-radius: 25px;
+    color: #eff;
+    background: #252525;
+}
+
+pre code {
+    font-family: 'Fira Code', monospace;
+    color: inherit;
+}
+
+/* Nút Copy cải tiến */
+.copy-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: auto;
+    padding: 5px 10px;
+    background-color: transparent; /* Loại bỏ màu nền */
+    color: #bdbdbd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease, transform 0.2s ease, background-color 0.3s ease;
+    font-weight: 900;
+
+}
+
+.copy-button:hover {
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.2s ease, background-color 0.3s ease;
+    border: 1px solid #383c4a; /* Thêm border khi hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Màu nền nhạt khi hover */
+}
+
+.copy-button::before {
+    content: "\f24d"; /* Mã Unicode của icon clone trong Font Awesome */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.copy-button.copied::before {
+    content: "\f00c"; /* Mã Unicode của icon check trong Font Awesome */
+    color: #ffffff;
+}
+
+/* Highlight dòng đang hover */
+pre:hover > code > .hljs-ln-line:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.safety-settings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#close-safety-settings {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #e0e0e0;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+#close-safety-settings:hover {
+    color: #0d6efd;
+}
+
+.model-message .message-content,
+.user-message .message-content {
+    position: relative; 
+    animation: bubbleIn 0.4s ease forwards;
+    padding-right: 40px; 
+}
+
+@keyframes bubbleIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.chat-list-icon {
+    margin-right: 10px;
+    color: #d3d3d3;
+    font-size: 18px;
+}
+
+.typing-indicator .message-content {
+    background-color: #121212;
+    padding: 12px;
+    display: inline-block;
+    max-width: 70%;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+
+.typing-dots {
+    display: inline-block;
+}
+
+.typing-dots span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 2px;
+    background-color: #e0e0e0;
+    animation: typing 1s infinite;
+}
+
+.typing-dots span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-dots span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typing {
+    0%,
+    40%,
+    100% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+
+    20% {
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+}
+
+/* Ẩn sidebar hoàn toàn ban đầu */
+.sidebar.collapsed {
+    width: 0;
+    padding: 0;
+}
+
+/* Loại bỏ overflow: hidden */
+/* .sidebar.collapsed {
+    overflow: hidden;
+} */
+
+/* Ẩn các thành phần trong sidebar khi thu gọn */
+.sidebar.collapsed .sidebar-top h3,
+.sidebar.collapsed .sidebar-top button,
+.sidebar.collapsed .sidebar-bottom h3,
+.sidebar.collapsed #chat-list li,
+.sidebar.collapsed .delete-buttons {
+    display: none;
+}
+
+/* Điều chỉnh main-content khi sidebar thu gọn */
+.main-content.sidebar-collapsed {
+    width: calc(100%);
+}
+
+.main-content.sidebar-collapsed.safety-open {
+    width: calc(100% - 350px);
+}
+
+.system-instruction-container {
+    width: calc(100% - 40px);
+    max-width: 900px;
+    margin: 20px auto;
+    border: 1px solid #383c4a;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* Dùng transition cho max-height */
+    transition: max-height 0.3s ease-in-out;
+    max-height: 55px; /* Chiều cao ban đầu khi thu gọn */
+}
+
+/* Mở rộng khi không collapsed */
+.system-instruction-container:not(.collapsed) {
+    max-height: 500px; /* Chiều cao tối đa khi mở rộng */
+}
+
+.instruction-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.instruction-header span {
+    margin-left: 10px;
+    color: #e0e0e0;
+}
+
+.system-instruction-container #toggle-instruction {
+    background: none;
+    color: #a8a8a8;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.2s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.system-instruction-container #toggle-instruction:hover {
+    background-color: #313538;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+/* Xoay mũi tên khi khung nhập được mở */
+.system-instruction-container:not(.collapsed) #toggle-instruction {
+    transform: rotate(180deg);
+}
+
+.system-instruction-container #system-instruction-input {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #383c4a;
+    border-radius: 25px;
+    background-color: #343a40;
+    color: #e0e0e0;
+    resize: vertical;
+    min-height: 70px;
+    /* Ẩn bằng opacity và pointer-events */
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.system-instruction-container #save-system-instruction {
+    color: #9c9c9c;
+    background-color: #121212;
+    border: 1px solid #121212;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    align-self: flex-end; /* Căn nút "Lưu" sang phải */
+    transition: color 0.3s ease, transform 0.2s ease, background-color 0.3s ease;
+    /* Ẩn bằng opacity và pointer-events */
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.system-instruction-container #save-system-instruction:hover {
+    color: #fff;
+    background-color: #343a40;
+}
+
+/* Ẩn nội dung khi collapsed */
+.system-instruction-container.collapsed #system-instruction-input,
+.system-instruction-container.collapsed #save-system-instruction {
+    opacity: 0;
+    pointer-events: none;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+/* Thêm transition cho margin và padding */
+.system-instruction-container #system-instruction-input,
+.system-instruction-container #save-system-instruction {
+    transition: opacity 0.5s ease-in-out, margin 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+#placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    text-align: center;
+    color: #ffffffba;
+     animation: fadeIn 1s ease-out forwards;
+}
+
+#placeholder h1 {
+    font-size: 3.2em;
+    margin-bottom: 10px;
+     animation: slideUp 0.8s ease-out forwards;
+}
+
+#placeholder p {
+    font-size: 1.2em;
+    max-width: 60%;
+     animation: slideUp 0.8s ease-out forwards;
+}
+
+
+.prompt-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+     animation: slideUp 0.8s ease-out forwards;
+}
+
+.prompt-button {
+    background-color: #343a40;
+    color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+.prompt-button:hover {
+    background-color: #444c56;
+    transform: translateY(-2px);
+}
+
+.prompt-button i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* Animation cho placeholder */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Điều chỉnh delay cho từng nút prompt */
+.prompt-button:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.prompt-button:nth-child(2) {
+    animation-delay: 1.2s;
+}
+
+.prompt-button:nth-child(3) {
+    animation-delay: 1.4s;
+}
+.hljs-ln-numbers {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  text-align: right;
+  color: #777;
+  border-right: 1px solid #555;
+  vertical-align: top;
+  padding-right: 10px !important;
+}
+
+.hljs-ln-code {
+  padding-left: 10px !important;
+}
+
+.code-container {
+  position: relative; /* Thêm position relative */
+  padding-bottom: 45px; /* Thêm padding bottom để tạo khoảng trống cho nút copy */
+  border: 1px solid #555; /* Border nổi bật hơn */
+  border-radius: 25px;
+}
+/* Di chuyển các nút chức năng ra ngoài message-text */
+.message-content {
+    display: flex; /* Sử dụng flexbox */
+    align-items: flex-start; /* Căn chỉnh các phần tử theo chiều dọc từ trên xuống */
+}
+
+.message-text {
+    flex-grow: 1; /* Cho phép message-text mở rộng để lấp đầy khoảng trống */
+}
+
+/* Điều chỉnh vị trí các nút chức năng */
+.message-options {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 10px;
+    position: absolute; 
+    top: 5px;          
+    right: 5px;     
+    z-index: 10;     
+}
+
+/* Hiển thị các nút chức năng khi hover vào message-content */
+.message-content:hover .message-options {
+    display: flex;
+}
+
+/* Định dạng cho các nút */
+.message-options button {
+    background: none;
+    border: none;
+    padding: 5px;
+    margin-bottom: 5px; /* Khoảng cách giữa các nút */
+    cursor: pointer;
+    color: #bdbdbd; /* Màu icon */
+    border-radius: 5px;
+    line-height: 1; /* Điều chỉnh chiều cao của nút */
+}
+
+.message-options button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+/* CSS cho nút more options */
+.more-options-button {
+    position: relative;
+}
+
+.more-options-dropdown {
+    position: absolute;
+    top: 100%; /* Hiển thị ngay dưới nút more-options */
+    left: 0;
+    background-color: #343a40;
+    border: 1px solid #383c4a;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 20;
+    display: none; /* Ẩn mặc định */
+    width: 100px;
+}
+
+.more-options-button:hover .more-options-dropdown {
+    display: block;
+    animation: slideDown 0.3s ease;
+}
+
+.more-options-dropdown button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 5px;
+    margin: 0;
+    cursor: pointer;
+    color: #bdbdbd;
+}
+
+.more-options-dropdown button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+/* Thêm animation cho dropdown */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*Chỉnh sữa lại vị trí của icon và copy button trong khung code */
+pre {
+    position: relative; /* Thêm position relative cho pre */
+}
+.copy-button {
+    position: absolute; /* Đổi position thành absolute */
+    bottom: 10px; /* Đặt vị trí ở dưới */
+    right: 10px; /* Đặt vị trí ở bên phải */
+    height: auto; /* Chỉnh lại height */
+    /* Các thuộc tính khác giữ nguyên */
+}
+.edit-textarea {
+    width: calc(100% - 10px);
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #383c4a;
+    border-radius: 5px;
+    background-color: #343a40;
+    color: #e0e0e0;
+    margin-top: 10px;
+    resize: vertical;
+    position: absolute; /* Đặt position absolute */
+    bottom: 0; /* Đặt bottom về 0 */
+    left: 0; /* Đặt left về 0 */
+    box-sizing: border-box; /* Để padding và border không làm thay đổi kích thước */
+    display: none; /* Ẩn mặc định */
+}
+
+.edit-textarea.active {
+    display: block; /* Hiện khi active */
+}
+
+.edit-actions {
+    display: none; /* Ẩn mặc định */
+    position: absolute; /* Đặt position absolute */
+    bottom: 10px; /* Đặt vị trí ở dưới cùng của message-content */
+    right: 10px; /* Đặt vị trí ở bên phải */
+}
+
+.edit-actions.active {
+    display: flex; /* Hiện khi active */
+}
+.edit-actions button {
+    background: none;
+    border: none;
+    padding: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    color: #bdbdbd;
+    border-radius: 5px;
+}
+
+.edit-actions button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+.edit-input {
+    width: 95%;
+    height: auto;
+    min-height: 80px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: #e0e0e0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    resize: vertical;
+    box-sizing: border-box;
+    outline: none;
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word; /* Cho phép ngắt từ dài */
+}
+
+
+/* Các nút Lưu và Hủy */
+.save-button,
+.cancel-button {
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    color: #bdbdbd;
+    border-radius: 5px;
+}
+
+.save-button:hover,
+.cancel-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+/* Container cho các nút chỉnh sửa */
+.edit-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
