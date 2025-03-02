@@ -6,7 +6,7 @@
 
 ## Giới thiệu
 
-**Chat Bot GUI** là một ứng dụng giao diện người dùng (GUI) cho phép tương tác với mô hình ngôn ngữ Gemini của Google thông qua một giao diện trò chuyện thân thiện.  Ứng dụng hỗ trợ tải lên và xử lý nhiều loại file (text, ảnh), tùy chỉnh cài đặt an toàn, quản lý lịch sử trò chuyện, và thay đổi hướng dẫn hệ thống (system instruction).
+**Chat Bot GUI** là một ứng dụng giao diện người dùng (GUI) cho phép tương tác với mô hình ngôn ngữ Gemini của Google (Gemini 2.0 Flash) thông qua một giao diện trò chuyện thân thiện.  Ứng dụng hỗ trợ tải lên và xử lý nhiều loại file (text, ảnh), tùy chỉnh cài đặt an toàn, quản lý lịch sử trò chuyện, và thay đổi hướng dẫn hệ thống (system instruction).
 
 ## Tính năng
 
@@ -103,7 +103,7 @@
 
 ## Introduction
 
-The **Chat Bot GUI** is a user interface (GUI) application that allows you to interact with Google's Gemini language model through a friendly chat interface. The application supports uploading and processing various file types (text, images), customizing safety settings, managing chat history, and changing the system instruction.
+The **Chat Bot GUI** is a user interface (GUI) application that allows you to interact with Google's Gemini language model (Gemini 2.0 Flash) through a friendly chat interface. The application supports uploading and processing various file types (text, images), customizing safety settings, managing chat history, and changing the system instruction.
 
 ## Features
 
@@ -200,7 +200,7 @@ The **Chat Bot GUI** is a user interface (GUI) application that allows you to in
 
 ## 概要
 
-**Chat Bot GUI** は、Google の Gemini 言語モデルとフレンドリーなチャットインターフェースを通じて対話できるユーザーインターフェース (GUI) アプリケーションです。このアプリケーションは、さまざまなファイルタイプ (テキスト、画像) のアップロードと処理、安全設定のカスタマイズ、チャット履歴の管理、システム指示の変更をサポートしています。
+**Chat Bot GUI** は、Google の Gemini (Gemini 2.0 Flash) 言語モデルとフレンドリーなチャットインターフェースを通じて対話できるユーザーインターフェース (GUI) アプリケーションです。このアプリケーションは、さまざまなファイルタイプ (テキスト、画像) のアップロードと処理、安全設定のカスタマイズ、チャット履歴の管理、システム指示の変更をサポートしています。
 
 ## 機能
 
