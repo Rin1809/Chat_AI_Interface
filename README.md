@@ -1,5 +1,7 @@
 # Chat Bot GUI ᓚᘏᗢ
 
+![Image](https://github.com/user-attachments/assets/544a539e-6e2e-435d-b275-472594d6f562)
+
 <!-- Vietnamese -->
 <details>
   <summary>🇻🇳 Tiếng Việt</summary>
