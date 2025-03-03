@@ -46,7 +46,7 @@
 
     ```bash
     # Clone repository (nếu chưa tải về)
-    git clone <URL_repository_cua_ban>
+    git clone https://github.com/Rin1809/Chat_AI_Interface/
     cd <ten_thu_muc>
 
     # Tạo môi trường ảo (tùy chọn nhưng rất khuyến khích)
@@ -61,7 +61,7 @@
     # Cài đặt thư viện
     pip install -r requirements.txt
     ```
-    Thay thế `<URL_repository_cua_ban>` và  `<ten_thu_muc>` cho phù hợp.
+
 
 4.  **Chạy ứng dụng:**
 
@@ -143,7 +143,7 @@ The **Chat Bot GUI** is a user interface (GUI) application that allows you to in
 
     ```bash
     # Clone the repository (if not already downloaded)
-    git clone <your_repository_url>
+    git clone https://github.com/Rin1809/Chat_AI_Interface/
     cd <repository_directory>
 
     # Create a virtual environment (optional but highly recommended)
@@ -158,7 +158,6 @@ The **Chat Bot GUI** is a user interface (GUI) application that allows you to in
     # Install dependencies
     pip install -r requirements.txt
     ```
-    Replace `<your_repository_url>` and `<repository_directory>` appropriately.
 
 4.  **Run the Application:**
 
@@ -240,7 +239,7 @@ The **Chat Bot GUI** is a user interface (GUI) application that allows you to in
 
     ```bash
     # リポジトリをクローンします (まだダウンロードしていない場合)
-    git clone <your_repository_url>
+    git clone https://github.com/Rin1809/Chat_AI_Interface/
     cd <repository_directory>
 
     # 仮想環境を作成します (オプションですが、強く推奨します)
@@ -255,7 +254,7 @@ The **Chat Bot GUI** is a user interface (GUI) application that allows you to in
     # 依存関係をインストール
     pip install -r requirements.txt
     ```
-    `<your_repository_url>` と `<repository_directory>` を適切に置き換えてください。
+
 
 4.  **アプリケーションの実行:**
 
