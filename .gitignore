@@ -9,7 +9,6 @@ __pycache__/
 Thumbs.db
 .idea/
 
-# Thư mục upload (nếu không muốn chia sẻ file upload)
 Chat_Interface/static/uploads/
 
 # Các thư mục node_modules.
