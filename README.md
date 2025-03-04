@@ -1,4 +1,4 @@
-# Chat Bot UI ᓚᘏᗢ
+# AI - UI ᓚᘏᗢ
 
 ![Image](https://github.com/user-attachments/assets/544a539e-6e2e-435d-b275-472594d6f562)
 
