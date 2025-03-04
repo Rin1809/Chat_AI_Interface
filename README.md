@@ -4,7 +4,7 @@
 ![Image](https://github.com/user-attachments/assets/544a539e-6e2e-435d-b275-472594d6f562)
 
 ## Picture 2
-![Image](abc.png)
+![image](https://github.com/user-attachments/assets/78ace461-9332-458a-a100-52cbcc111510)
 
 ## Introduction
 <!-- Vietnamese -->
