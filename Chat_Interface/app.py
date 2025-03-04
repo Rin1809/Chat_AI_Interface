@@ -139,7 +139,6 @@ def save_chat_history(chat_id, history):
     filepath = os.path.join(chats_folder, f"{chat_id}.json")
     os.makedirs(chats_folder, exist_ok=True)
 
-    # Tạo danh sách tin nhắn mới với định dạng cải thiện
     formatted_history = []
     for message in history:
         formatted_message = {
@@ -147,21 +146,18 @@ def save_chat_history(chat_id, history):
             "parts": []
         }
         for part in message["parts"]:
-            # Loại bỏ các thẻ HTML không mong muốn (ví dụ: nút bấm)
+            # Loại bỏ các thẻ không mong muốn
             if isinstance(part, dict) and "text" in part:
-                part["text"] = re.sub(r'<button.*?</button>', '', part["text"])
-                part["text"] = re.sub(r'<div class="message-options.*?</div>', '', part["text"])
+                cleaned_text = re.sub(r'<button.*?</button>', '', part["text"])
+                cleaned_text = re.sub(r'<div class="message-options.*?</div>', '', cleaned_text)
+                formatted_message["parts"].append({"text": cleaned_text})
 
-                if part["text"].startswith("```"):
-                    formatted_message["parts"].append({"code": part["text"]})
-                else:
-                    formatted_message["parts"].append({"text": part["text"]})
+            # Xử lý trường hợp 'code', chuyển thành 'text'
             elif isinstance(part, dict) and "code" in part:
-                formatted_message["parts"].append({"code": part["code"]})
+                formatted_message["parts"].append({"text": part["code"]}) # Chuyển "code" thành "text"
 
         formatted_history.append(formatted_message)
 
-    # Lưu tin nhắn với định dạng JSON dễ đọc hơn
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump({"history": formatted_history}, f, indent=4, ensure_ascii=False)
 
@@ -311,7 +307,7 @@ def chat():
             history.append(
                 {
                     "role": "model",
-                    "parts": [{"text": response_text}] # Đảm bảo parts là danh sách chứa từ điển
+                    "parts": [{"text": response_text}]
                 }
             )
             save_chat_history(chat_id, history)
@@ -346,15 +342,12 @@ def get_chats():
         history = get_chat_history(chat_id)
         if history:
             last_message_content = history[-1]
-            # Xử lý các phần tử trong parts
+
             last_message_parts = []
             for part in last_message_content["parts"]:
-                if "text" in part:
+                if "text" in part: 
                     last_message_parts.append(part["text"])
-                elif "code" in part:
-                    last_message_parts.append(part["code"])
-
-            # Nối các phần tử thành một chuỗi
+     
             last_message = "".join(last_message_parts)
             chats.append({"chat_id": chat_id, "last_message": last_message})
     return jsonify(chats)
