@@ -1,8 +1,10 @@
 # AI - UI ᓚᘏᗢ
 
+## Picture 1
 ![Image](https://github.com/user-attachments/assets/544a539e-6e2e-435d-b275-472594d6f562)
 
-
+## Picture 2
+![Image](abc.png)
 
 ## Introduction
 <!-- Vietnamese -->
