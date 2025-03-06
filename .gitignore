@@ -19,3 +19,8 @@ Chat_Interface/node_modules/
 
 # Data Folder.
 Chat_Interface/data/chats/
+moitruongao/
+__pycache__/
+.env
+Chat_Interface/data/chats/
+Chat_Interface/static/uploads/
